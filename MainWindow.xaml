@@ -1,0 +1,24 @@
+﻿<Window x:Class="Aplication.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Aplication"
+        mc:Ignorable="d"
+        Title="Playfair" Height="390" Width="500" ResizeMode="NoResize" WindowStartupLocation="CenterScreen" Background="#FF1D1D1D">
+    <Grid>
+        <StackPanel Margin="12" HorizontalAlignment="Center">
+            <TextBlock  TextWrapping="Wrap" Text="Key:" Foreground="WhiteSmoke" Margin="5"/>
+            <TextBox Name="key" Height="22" TextWrapping="Wrap" Width="200" HorizontalAlignment="Left" Margin="5"/>
+            <TextBlock  TextWrapping="Wrap" Text="Input:" Foreground="WhiteSmoke" Margin="5"/>
+            <TextBox Name="input" Height="85" TextWrapping="Wrap" Width="450" Margin="5"/>
+            <TextBlock  TextWrapping="Wrap" Text="Output:" Foreground="WhiteSmoke" Margin="5"/>
+            <TextBox Name="output" Height="85" TextWrapping="Wrap" Width="450" Margin="5"/>
+            <Button Width="70" Height="22" Content="Przetwórz" Margin="5" Name="encryptOrDecrypt"/>
+        </StackPanel>
+        <StackPanel HorizontalAlignment="Right" VerticalAlignment="Top" Margin="0,15,20,0" Orientation="Horizontal" Height="30">
+            <TextBlock Text="Decrypt" Foreground="WhiteSmoke" Margin="0,5,0,0"/>
+            <CheckBox Name="decryptionCheckBox" Margin="8,6,0,0" Width="22" Height="22"/>
+        </StackPanel>
+    </Grid>
+</Window>
